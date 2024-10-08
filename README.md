@@ -69,3 +69,8 @@ To download a book run:
 ```shell
 grawlix [options] <book url>
 ```
+
+from eReolen
+```shell
+grawlix --username "<CPR>" --password "<PIN>" https://ereolen.dk/ting/object/870970-basis%3A38714546 --library "Aalborg"
+```

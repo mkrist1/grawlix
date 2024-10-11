@@ -74,3 +74,17 @@ from eReolen
 ```shell
 grawlix --username "<CPR>" --password "<PIN>" https://ereolen.dk/ting/object/870970-basis%3A38714546 --library "Aalborg"
 ```
+
+
+## Run in Docker
+```shell
+
+FROM python:3
+
+WORKDIR /usr/src/app
+
+RUN pip install grawlix
+
+COPY . .
+
+```

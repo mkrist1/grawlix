@@ -68,7 +68,7 @@ class Ereolen(Source):
 
 
     async def download(self, url: str) -> Result:
-        book_id: str = await self._get_book_id(url)
+        book_id: str = uuid = url.split("orderid=")[-1]
         metadata_response = await self._client.get(
             f"https://bookstreaming.pubhub.dk/v1/order/metadata/{book_id}",
         )

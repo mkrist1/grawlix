@@ -17,6 +17,7 @@ KEY_ENCRYPTION_IV = bytes([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
 class Ereolen(Source):
     name: str = "eReolen"
     match: list[str] = [
+        r"https://www.aalborgbibliotekerne.dk/reader\?orderid=[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
         r"https://ereolen.dk/ting/object/\d+-.+/read/?$",
         r"https://ereolen.dk/ting/object/\d+-[^/]+/?$"
     ]

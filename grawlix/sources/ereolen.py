@@ -10,7 +10,7 @@ import re
 from Crypto.Cipher import AES
 from base64 import b64decode
 
-LOGIN_PAGE_URL = "https://ereolen.dk/adgangsplatformen/login?destination=/user"
+LOGIN_PAGE_URL = "https://www.aalborgbibliotekerne.dk/login?destination=/user"        
 KEY_ENCRYPTION_KEY = bytes([30, 193, 150, 69, 32, 247, 35, 95, 92, 255, 193, 159, 121, 40, 151, 179, 39, 159, 75, 110, 32, 205, 210, 58, 81, 55, 158, 33, 8, 149, 108, 74])
 KEY_ENCRYPTION_IV = bytes([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
 
